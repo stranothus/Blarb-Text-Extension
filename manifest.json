@@ -1,0 +1,17 @@
+{
+    "manifest_version" : 2,
+    "name" : "Blarb Text Extension",
+    "version" : "0.1.0",
+    "description" : "Adds blarb buttons to all text inputs",
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "declarativeContent"
+    ],
+    "content_scripts": [
+        {
+            "matches" : ["http://*/*", "https://*/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
